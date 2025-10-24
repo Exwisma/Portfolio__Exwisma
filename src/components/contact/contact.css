@@ -1,0 +1,131 @@
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.input-email{
+ width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+@media (max-width: 600px) {
+  .input-box{
+    flex-direction: column;
+  }
+  .contact form .input-box input {
+  width: 100%;
+}
+}
+@media (max-width:400px) {
+  .contact h2 {
+  font-size: 4rem;
+}
+}
+@media (max-width:350px) {
+  .contact h2 {
+  font-size: 3.5rem;
+}
+}
+@media (max-width:330px) {
+  .contact h2 {
+  font-size: 3.2rem;
+}
+}
+
+
+.success-message{
+  opacity: 0;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+  pointer-events: none; /* чтобы не мешало кликам, когда скрыто */
+  color:  var(--main-color)  ;          
+  font-size: 3rem;      
+  text-align: center;    
+  font-weight: 600; 
+  background-color: color-mix(in srgb, var(--second-bg-color) 80%, transparent);
+  backdrop-filter: blur(1.2rem) saturate(180%);
+  -webkit-backdrop-filter: blur(1.2rem) saturate(180%); /* для Safari */
+  border-radius: 2rem;
+  padding: 1rem;
+  min-width: 25rem;
+  max-width: 100rem;
+  width: calc(100% - 20%);
+  position: fixed; 
+  bottom: 5%;              
+  left: 50%;                 /* центрируем по горизонтали */
+  right: auto;
+  transform: translate(-50%, 2rem) scale(0.97);
+  z-index: 1000;            /* поверх всего остального */
+  box-shadow: 
+  0 2rem 1rem rgba(0, 0, 0, 0.2),   /* нижняя тень */
+  0 -1.5rem 1rem rgba(0, 0, 0, 0.15);  /* верхняя тень */ 
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.success-message.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0) scale(1);
+}
+
+@media (max-width: 410px) {
+  .success-message{
+      font-size: 2.5rem;
+      font-weight: 600; 
+  }
+}

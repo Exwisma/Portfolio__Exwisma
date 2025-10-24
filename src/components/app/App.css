@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bg-color: #101010;            /* Тёмный угольный */
+  --second-bg-color: #20232a;     /* Темный синий */
+  --text-color: #e0e0e0;          /* Светло-серый */
+  --main-color: #3b82f6;          /* Синий */
+  
+  /* Акцентные цвета */
+  --gold-color: #ffd700;           /* Золотой */
+  --red-color: #ff4d4f;            /* Fiery Red */
+  --mint-color: #3ae374;           /* Мятный зеленый */
+  --coral-color: #ff6b6b;          /* Коралловый */
+  --aqua-color: #00fff7;           /* Аквамариновый синий */
+}
+
+
+*::selection {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+section:not(:nth-of-type(2)) {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
