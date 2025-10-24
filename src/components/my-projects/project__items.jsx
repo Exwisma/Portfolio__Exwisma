@@ -1,5 +1,5 @@
 import './my-projects.css'
-import CrossImg from '/assets/project-images/Cross.png';
+import CrossImg from '../../assets/project-images/Cross.png';
 
 const projectInfo = [
   { name: "Кроссовки",

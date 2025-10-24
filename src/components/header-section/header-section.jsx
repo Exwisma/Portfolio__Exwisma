@@ -1,6 +1,6 @@
 import 'boxicons/css/boxicons.min.css';
 import './header-section.css'
-import myPhoto from '/assets/my-photo/Мое фото№1.jpg'
+import myPhoto from '../../assets/my-photo/Мое фото№1.jpg'
 import React from 'react';
 import Typed from 'typed.js';
 
